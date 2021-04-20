@@ -173,11 +173,11 @@ export default function HospitalList() {
                   marginLeft: '20px',
                 }}
               >
-                <h3 style={{ color: green[600] }}>Available seats</h3>
+                <h3 style={{ color: green[700] }}>Available seats</h3>
                 <span
                   style={{
                     fontSize: '18px',
-                    color: green[600],
+                    color: green[700],
                     fontWeight: '700',
                   }}
                 >
