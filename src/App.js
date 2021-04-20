@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { Container } from '@material-ui/core';
 import './App.css';
+import HospitalList from './components/HospitalList';
+import SearchIcu from './components/SearchField';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ position: 'fixed', width: '100%', zIndex: '10' }}>
+        <header className="App-header">Search ICU around you</header>
+        <Container>
+          <SearchIcu />
+        </Container>
+      </div>
+      <Container>
+        <HospitalList />
+      </Container>
     </div>
   );
 }
